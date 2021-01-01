@@ -1,0 +1,388 @@
+.title {
+    font-family: 'Audiowide', cursive;
+    color: #fff;
+    font-size: 2.2rem;
+    margin-left: 1.3rem;
+    margin-top: 37rem;
+    line-height: 3.2rem;
+}
+
+.subtitle {
+    font-family: 'Inknut Antiqua', serif;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    margin-left: 1.3rem;
+    color: #fff;
+    line-height: 1.75rem;
+}
+
+.button {
+    border-radius: 25px;
+    font-family: 'Audiowide', cursive;
+    color: #fff;
+    width: auto;
+    height: auto;
+    font-size: 1.35rem;
+    padding: 0.15rem 1.2rem;
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+    margin-bottom: 6rem;
+    background-color: #fc6A03;
+    border: 1.5px solid #fff;
+}
+
+.col-2 {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .col-2 .planet1 {
+        margin-top: 8rem;
+        width: 17rem;
+        margin-right: -5rem;
+        position: absolute;
+    }
+
+    .col-2 .planet2 {
+        margin-top: 25.8rem;
+        width: 7.2rem;
+        margin-right: 14.8rem;
+        position: absolute;
+    }
+
+    .col-2 .falcon {
+        margin-top: 9rem;
+        width: 18rem;
+        margin-right: 1rem;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .col-2 .spaceship {
+        margin-top: 6rem;
+        width: 5rem;
+        margin-right: 7rem;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .col-2 .star1 {
+        margin-top: 1.5rem;
+        width: 2.5rem;
+        margin-right: 2.5rem;
+        position: absolute;
+    }
+
+    .col-2 .star2 {
+        margin-top: 9rem;
+        width: 1.45rem;
+        transform: rotate(45deg);
+        margin-right: 14.5rem;
+        position: absolute;
+    }
+
+    .col-2 .star3 {
+        margin-top: 26rem;
+        width: 1.8rem;
+        transform: rotate(-30deg);
+        margin-right: 8.5rem;
+        position: absolute;
+    }
+
+
+.footer {
+    color: #fff;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+@media only screen and (min-width: 400px) {
+
+    .col-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+        .col-2 .planet1 {
+            width: 17rem;
+            margin-right: -17.5rem;
+        }
+
+        .col-2 .falcon {
+            width: 20rem;
+            margin-right: 2rem;
+        }
+
+        .col-2 .planet2 {
+            width: 7.6rem;
+            margin-right: 18rem;
+        }
+
+        .col-2 .star1 {
+            width: 3.3rem;
+            margin-right: -15rem;
+        }
+
+        .col-2 .star2 {
+            width: 2.2rem;
+            margin-right: 16.5rem;
+        }
+
+        .col-2 .star3 {
+            width: 2rem;
+            transform: rotate(-30deg);
+            margin-right: 2.5rem;
+        }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 576px) {
+    .title {
+        margin-left: 1.6rem;
+        margin-top: 6.5rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .subtitle {
+        margin-top: 2rem;
+        font-size: 1rem;
+        margin-left: 1.6rem;
+        color: #fff;
+        line-height: 1.7rem;
+    }
+
+    .col-2 .planet1 {
+        width: 15rem;
+        margin-right: -16.5rem;
+    }
+
+    .col-2 .falcon {
+        width: 15rem;
+        margin-right: 2rem;
+        margin-right: -6rem;
+    }
+
+    .col-2 .planet2 {
+        width: 6rem;
+        margin-right: 14rem;
+        margin-top: 17rem;
+    }
+
+    .col-2 .star1 {
+        width: 3rem;
+        margin-right: -15rem;
+        margin-top: 1.7rem;
+    }
+
+    .col-2 .star2 {
+        width: 2.2rem;
+        margin-right: 11rem;
+        margin-top: 7.5rem;
+    }
+
+    .col-2 .star3 {
+        width: 2rem;
+        transform: rotate(-30deg);
+        margin-right: 2.5rem;
+        margin-top: 23rem;
+    }
+
+    .col-2 .spaceship {
+        margin-top: 6rem;
+        width: 4.6rem;
+        margin-right: 4rem;
+    }
+
+    .problem-statement {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title {
+        margin-left: 5rem;
+        margin-top: 5rem;
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+
+    .subtitle {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        margin-left: 5rem;
+        color: #fff;
+        line-height: 1.8rem;
+    }
+
+    .col-2 .planet1 {
+        width: 16rem;
+    }
+
+    .col-2 .falcon {
+        width: 20rem;
+        margin-right: -3.5rem;
+    }
+
+    .col-2 .planet2 {
+        width: 6rem;
+        margin-right: 14rem;
+        margin-top: 21rem;
+    }
+
+    .button {
+        margin-left: 5rem;
+    }
+
+    .problem-statement {
+        font-size: 1rem;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .title {
+        margin-left: 4rem;
+        margin-top: 5rem;
+        font-size: 3.3rem;
+        line-height: 5.2rem;
+    }
+
+    .subtitle {
+        margin-top: 2.8rem;
+        font-size: 1.4rem;
+        margin-left: 4rem;
+        color: #fff;
+        line-height: 2rem;
+    }
+
+    .button {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        margin-left: 4rem;
+    }
+
+    .col-2 {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .col-2 .planet1 {
+            width: 22rem;
+            margin-right: -8.5rem;
+            margin-top: 8rem;
+            z-index: 2;
+        }
+
+        .col-2 .falcon {
+            width: 25rem;
+            margin-right: 3rem;
+            z-index: 3;
+        }
+
+        .col-2 .planet2 {
+            width: 9rem;
+            margin-right: -0.4rem;
+            margin-top: -1rem;
+            z-index: 1;
+        }
+
+        .col-2 .spaceship {
+            margin-top: 6rem;
+            width: 6rem;
+            margin-right: 14rem;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .col-2 .star1 {
+            margin-top: 1.5rem;
+            width: 2.5rem;
+            margin-right: 14.5rem;
+            z-index: 4;
+        }
+
+        .col-2 .star2 {
+            margin-top: 25rem;
+            width: 3.3rem;
+            transform: rotate(45deg);
+            margin-right: 20rem;
+            z-index: 4;
+        }
+
+        .col-2 .star3 {
+            margin-top: 28rem;
+            width: 2.2rem;
+            transform: rotate(-30deg);
+            margin-right: 11rem;
+            z-index: 4;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-2 {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .col-2 .planet1 {
+            width: 25rem;
+            margin-right: -6.5rem;
+            margin-top: 8rem;
+            z-index: 2;
+        }
+
+        .col-2 .falcon {
+            width: 28rem;
+            margin-right: 5.8rem;
+            z-index: 3;
+        }
+
+        .col-2 .planet2 {
+            width: 10rem;
+            margin-right: 0rem;
+            margin-top: -1rem;
+            z-index: 1;
+        }
+
+        .col-2 .spaceship {
+            margin-top: 6rem;
+            width: 5.6rem;
+            margin-right: 21.5rem;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .col-2 .star1 {
+            margin-top: 1.5rem;
+            width: 2.5rem;
+            margin-right: 14.5rem;
+            z-index: 4;
+        }
+
+        .col-2 .star2 {
+            margin-top: 30rem;
+            width: 3.3rem;
+            transform: rotate(45deg);
+            margin-right: 28rem;
+            z-index: 4;
+        }
+
+        .col-2 .star3 {
+            margin-top: 36rem;
+            width: 2.2rem;
+            transform: rotate(-30deg);
+            margin-right: 15rem;
+            z-index: 4;
+        }
+}

@@ -1,0 +1,165 @@
+
+.heading {
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-title {
+    font-family: 'Audiowide', cursive;
+    font-size: 1.4rem;
+    margin-top: 1.3rem;
+}
+
+
+
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 5rem;
+}
+
+#donlon, #enchai, #jebing, #sapir, #lerbin, #pingasur {
+    position: absolute;
+}
+
+.planet:hover {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.planetLogo {
+    width: 6rem;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+#center {
+    width: 6rem;
+    transform: rotate(15deg);
+}
+
+#donlon {
+    width: 3rem;
+    animation: orbit1 20s linear infinite;
+}
+
+@keyframes orbit1 {
+    from {
+        transform: rotate(0deg) translateX(5.3rem) translateY(2rem) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(5.3rem) translateY(2rem) rotate(-360deg);
+    }
+}
+
+#enchai {
+    width: 4rem;
+    animation: orbit2 20s linear infinite;
+}
+
+@keyframes orbit2 {
+    from {
+        transform: rotate(0deg) translateX(-8.5rem) translateY(-2.3rem) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(-8.5rem) translateY(-2.3rem) rotate(-360deg);
+    }
+}
+
+#jebing {
+    width: 4rem;
+    animation: orbit3 20s linear infinite;
+}
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(0deg) translateX(0.4rem) translateY(8rem) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(0.4rem) translateY(8rem) rotate(-360deg);
+    }
+}
+
+#sapir {
+    width: 3.6rem;
+    animation: orbit4 20s linear infinite;
+}
+
+@keyframes orbit4 {
+    from {
+        transform: rotate(0deg) translateX(7.8rem) translateY(-4.5rem) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(7.8rem) translateY(-4.5rem) rotate(-360deg);
+    }
+}
+
+#lerbin {
+    width: 4rem;
+    animation: orbit5 20s linear infinite;
+}
+
+@keyframes orbit5 {
+    from {
+        transform: rotate(0deg) translateX(0.5rem) translateY(-8rem) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(0.5rem) translateY(-8rem) rotate(-360deg);
+    }
+}
+
+
+#pingasur {
+    width: 5rem;
+    animation: orbit6 20s linear infinite;
+}
+
+@keyframes orbit6 {
+    from {
+        transform: rotate(0deg) translateX(-8rem) translateY(7rem) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(-8rem) translateY(7rem) rotate(-360deg);
+    }
+}
+
+
+.nextButton {
+    border-radius: 30px;
+    background-color: #fc6A03;
+    border: 1.5px solid #fff;
+    font-family: 'Audiowide', cursive;
+    font-size: 1rem;
+    color: #fff;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding: 0.5rem 0.8rem;
+    display: block;
+}
+
+.footer {
+    color: #fff;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.5rem;
+}
