@@ -15,7 +15,10 @@ class Tab3 extends React.Component {
             <div className="hero" >
                 <Container fluid={true}>
 
-                    <Link to="/tab2" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="ml-3 mt-4 py-2 px-3" ><FontAwesomeIcon icon={faChevronCircleLeft} /> Back</Badge></Link>
+                    <span style={{ display: "flex", justifyContent: "space-between" }}>
+                        <Link to="/tab2" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="ml-3 mt-4 py-2 px-3" ><FontAwesomeIcon icon={faChevronCircleLeft} /> Back</Badge></Link>
+                        <a href="https://github.com/Dave3130/geektrust-finding-falcone" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="mr-3 mt-4 py-2 px-3" >Github </Badge></a>
+                    </span>
                     <p className="heading">Vehicles at King Shan's disposal</p>
 
                     <Row noGutters={true} style={{ marginTop: "1rem", marginBottom: "3rem" }}>
