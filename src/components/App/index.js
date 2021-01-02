@@ -216,6 +216,8 @@ class App extends React.Component {
                             time={this.state.timeTaken}
                             res={this.state.result}
                             clear={this.clearData}
+                            selectedPlanets={this.state.selectedPlanets}
+                            selectedVehicles={this.state.selectedVehicles}
                         />
                     </Route>
                 </Switch>

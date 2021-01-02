@@ -15,7 +15,7 @@ class Tab1 extends React.Component {
             <div>
                 <span style={{ display: "flex", justifyContent: "space-between" }}>
                     <Link to="/" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="ml-3 mt-4 py-2 px-3" ><FontAwesomeIcon icon={faChevronCircleLeft} /> Back</Badge></Link>
-                    <a href="https://github.com/Dave3130/geektrust-finding-falcone" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="mr-3 mt-4 py-2 px-3" >Github /></Badge></a>
+                    <a href="https://github.com/Dave3130/geektrust-finding-falcone" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="mr-3 mt-4 py-2 px-3" >Github </Badge></a>
                 </span>
                 <p className="problem-statement">After the recent war with neighbouring planet Falicornia, King Shan has exiled the Queen of Falicornia for 15 years.</p>
 
@@ -38,6 +38,7 @@ class Tab1 extends React.Component {
 
                 <p className="problem-statement">Queen Al Falcone is now in hiding. But if King Shan can find
                 her before the years are up, she will be exiled for another 15 years...</p>
+
                 <Link to="/tab2" style={{ textDecoration: "none" }}><button type="button" className="planetButton"  >Select Planets <FontAwesomeIcon icon={faChevronCircleRight} /></button></Link>
 
                 <div className="footer">

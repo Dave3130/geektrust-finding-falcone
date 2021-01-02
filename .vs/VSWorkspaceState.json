@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\App",
-    "\\src\\components\\Homepage",
     "\\src\\components\\Images",
+    "\\src\\components\\Tab1",
     "\\src\\components\\Tab3",
+    "\\src\\components\\Tab4",
+    "\\src\\components\\Tab5",
     "\\src\\config"
   ],
-  "SelectedNode": "\\src\\config\\remoteUrl.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

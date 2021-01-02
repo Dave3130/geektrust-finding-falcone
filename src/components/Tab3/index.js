@@ -19,6 +19,7 @@ class Tab3 extends React.Component {
                         <Link to="/tab2" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="ml-3 mt-4 py-2 px-3" ><FontAwesomeIcon icon={faChevronCircleLeft} /> Back</Badge></Link>
                         <a href="https://github.com/Dave3130/geektrust-finding-falcone" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="mr-3 mt-4 py-2 px-3" >Github </Badge></a>
                     </span>
+
                     <p className="heading">Vehicles at King Shan's disposal</p>
 
                     <Row noGutters={true} style={{ marginTop: "1rem", marginBottom: "3rem" }}>
@@ -42,8 +43,9 @@ class Tab3 extends React.Component {
                             </Col>
 
                         )}
-                    </Row>
 
+                    </Row>
+                    <p className="problem-statement" style={{ marginTop: "-2.5rem" }}>In the next step, choose best possible vehicles to cover all the planets</p>
                     <Link to="/tab4" style={{ textDecoration: "none" }}><button type="button" className="vehicleButton"  >Choose Vehicle <FontAwesomeIcon icon={faChevronCircleRight} /></button></Link>
                 </Container>
                 <div className="footer">

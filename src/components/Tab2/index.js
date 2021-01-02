@@ -24,6 +24,9 @@ class Tab2 extends React.Component {
                     <Link to="/tab1" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="ml-3 mt-4 py-2 px-3" ><FontAwesomeIcon icon={faChevronCircleLeft} /> Back</Badge></Link>
                     <a href="https://github.com/Dave3130/geektrust-finding-falcone" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="mr-3 mt-4 py-2 px-3" >Github </Badge></a>
                 </span>
+                <p className="problem-statement">King Shan has received intelligence that Al Falcone is hiding in one of these 6 planets - DonLon, Enchai, Jebing,
+                Sapir, Lerbin & Pingasor.
+                </p>
                 <p className="heading">Select any four planets you want to search in:</p>
                 <div id="wrapper">
                     <Image src={Planet1} id="center" />
@@ -54,7 +57,11 @@ class Tab2 extends React.Component {
                     </Row>
 
                     {Object.keys(this.props.selectedPlanets).length === 4 &&
-                        <Link to="/tab3" style={{ textDecoration: "none" }}><button type="button" className="nextButton"  >Next <FontAwesomeIcon icon={faChevronCircleRight} /></button></Link>
+                        <>
+                            <p className="problem-statement"> However king has limited resources at his disposal & can send his army to only 4 of these
+                planets.</p>
+                            <Link to="/tab3" style={{ textDecoration: "none" }}><button type="button" className="nextButton"  >Next <FontAwesomeIcon icon={faChevronCircleRight} /></button></Link>
+                        </>
                     }
 
                 </Container>
