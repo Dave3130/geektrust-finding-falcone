@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./style.css";
 import Homepage from "../Homepage/";
 import Tab1 from "../Tab1/";
 import Tab2 from "../Tab2/";

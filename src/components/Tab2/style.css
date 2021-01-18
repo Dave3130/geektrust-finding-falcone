@@ -1,13 +1,4 @@
 
-.heading {
-    color: #fff;
-    font-family: 'Audiowide', cursive;
-    letter-spacing: 0.05rem;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 2rem auto;
-}
-
 .col {
     display: flex;
     justify-content: center;

@@ -17,18 +17,10 @@
 }
 
 .button {
-    border-radius: 25px;
-    font-family: 'Audiowide', cursive;
-    color: #fff;
-    width: auto;
-    height: auto;
-    font-size: 1.35rem;
-    padding: 0.15rem 1.2rem;
+    float: left;
     margin-top: 1rem;
     margin-left: 1.3rem;
     margin-bottom: 6rem;
-    background-color: #fc6A03;
-    border: 1.5px solid #fff;
 }
 
 .col-2 {
@@ -99,7 +91,7 @@
     padding: 1.5rem;
 }
 
-
+/* Cus (400px and up) */
 @media only screen and (min-width: 400px) {
 
     .col-2 {
@@ -139,9 +131,7 @@
         }
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
 @media only screen and (min-width: 576px) {
     .title {
         margin-left: 1.6rem;
@@ -205,6 +195,7 @@
     }
 }
 
+/* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
     .title {
         margin-left: 5rem;
@@ -245,9 +236,7 @@
     }
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
-
 @media only screen and (min-width: 992px) {
     .title {
         margin-left: 4rem;
@@ -328,6 +317,7 @@
         }
 }
 
+/* Extra Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .col-2 {
         margin-top: 5rem;

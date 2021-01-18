@@ -1,76 +1,59 @@
 import React from 'react';
-import './style.css';
-import { Link } from 'react-router-dom';
-import { Container, Row, Col, Image, Card, Badge } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronCircleLeft, faWindowClose, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
-import planetImg from '../Images/planet.js';
-import Planet1 from '../assests/planet1.svg';
-import donlon from '../assests/donlon.svg';
-import enchai from '../assests/enchai.svg';
-import jebing from '../assests/jebing.svg';
-import sapir from '../assests/sapir.svg';
-import lerbin from '../assests/lerbin.svg';
-import pingasor from '../assests/pingasor.svg';
-
+import { Link } from "react-router-dom";
+import { Container, Row } from 'react-bootstrap';
+import Footer from '../Footer';
+import PlanetAnimation from './PlanetAnimation.js';
+import SelectedPlanets from './SelectedPlanets.js';
+import TopButtons from '../TopButtons';
+import Button from '../RoundButton';
+import { tab2 as Data } from '../Data';
 
 class Tab2 extends React.Component {
 
     render() {
+        const statement = {
+            color: "#fff",
+            fontFamily: "'Audiowide', cursive",
+            letterSpacing: "0.05rem",
+            fontSize: "1.25rem",
+            textAlign: "center",
+            margin: "2rem",
+        };
+        const heading = {
+            fontFamily: "'Audiowide', cursive",
+            color: "#fff",
+            letterSpacing: "0.05rem",
+            fontSize: "1.5rem",
+            textAlign: "center",
+            margin: "2rem auto",
+        }
 
         return (
-            <div className="hero" >
-                <span style={{ display: "flex", justifyContent: "space-between" }}>
-                    <Link to="/tab1" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="ml-3 mt-4 py-2 px-3" ><FontAwesomeIcon icon={faChevronCircleLeft} /> Back</Badge></Link>
-                    <a href="https://github.com/Dave3130/geektrust-finding-falcone" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}><Badge style={{ background: "#fc6A03", color: "#fff", fontFamily: "'Inknut Antiqua', serif" }} className="mr-3 mt-4 py-2 px-3" >Github </Badge></a>
-                </span>
-                <p className="problem-statement">King Shan has received intelligence that Al Falcone is hiding in one of these 6 planets - DonLon, Enchai, Jebing,
-                Sapir, Lerbin & Pingasor.
-                </p>
-                <p className="heading">Select any four planets you want to search in:</p>
-                <div id="wrapper">
-                    <Image src={Planet1} id="center" />
-                    <Image src={donlon} id="donlon" className="planet" onClick={(e) => this.props.onClick(0)} />
-                    <Image src={enchai} id="enchai" className="planet" onClick={(e) => this.props.onClick(1)} />
-                    <Image src={jebing} id="jebing" className="planet" onClick={(e) => this.props.onClick(2)} />
-                    <Image src={sapir} id="sapir" className="planet" onClick={(e) => this.props.onClick(3)} />
-                    <Image src={lerbin} id="lerbin" className="planet" onClick={(e) => this.props.onClick(4)} />
-                    <Image src={pingasor} id="pingasur" className="planet" onClick={(e) => this.props.onClick(5)} />
-                </div>
+            <>
+                <TopButtons url='/tab1' />
+                <p style={statement}>{Data.statement1}</p>
+                <p style={heading}>{Data.statement2}</p>
+
+                <PlanetAnimation click={this.props.onClick} />
                 <Container fluid={true}>
                     <Row noGutters={true} style={{ marginTop: "2.6rem", marginBottom: "3rem" }}>
-                        {this.props.selectedPlanets.map((data, index) =>
-                            <Col xs={12} sm={6} md={4} lg={3} className="col" key={index}>
-                                <Card className="text-center mt-5 mb-5" style={{ borderRadius: "1.6rem" }}>
-                                    <FontAwesomeIcon icon={faWindowClose} size="lg" style={{ color: "#000", margin: "15px" }} onClick={() => this.props.onClose(index)} />
-                                    <Card.Body>
-                                        {planetImg(data.name)}
-                                        <Card.Title className="card-title">{data.name}</Card.Title>
-                                        <p className="mb-2 mt-2 " style={{ fontSize: "1.1rem" }}>Distance - <span className="text-muted">{data.distance} megamiles</span></p>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-
-                        )
-                        }
-
+                        <SelectedPlanets data={this.props.selectedPlanets} close={this.props.onClose} />
                     </Row>
 
-                    {Object.keys(this.props.selectedPlanets).length === 4 &&
+                    {this.props.selectedPlanets && Object.keys(this.props.selectedPlanets).length === 4 &&
                         <>
-                            <p className="problem-statement"> However king has limited resources at his disposal & can send his army to only 4 of these
-                planets.</p>
-                            <Link to="/tab3" style={{ textDecoration: "none" }}><button type="button" className="nextButton"  >Next <FontAwesomeIcon icon={faChevronCircleRight} /></button></Link>
+                            <p style={statement}>{Data.statement3}</p>
+                            <Link to="/tab3" style={{ textDecoration: "none" }}>
+                                <Button value="Next" className="button" />
+                            </Link>
+
                         </>
                     }
 
                 </Container>
-                <div className="footer">
-                    <p >Coding Problem Statement: <a href="https://www.geektrust.in/coding-problem/frontend/space" rel="no_popper">https://www.geektrust.in/coding-problem/frontend/space</a></p>
-                    <p >Designed & Developed by <a href="https://jaydeepdave.me/" rel="noreferrer" target="_blank">Jaydeep Dave</a></p>
-                </div>
+                <Footer />
 
-            </div >
+            </>
 
         );
     };
