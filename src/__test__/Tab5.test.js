@@ -5,6 +5,7 @@ import Tab5 from '../components/Tab5';
 
 it("renders Tab5 without crashing", () => {
     const div = document.createElement("div");
+
     ReactDOM.render(
         <BrowserRouter>
             <Tab5 />

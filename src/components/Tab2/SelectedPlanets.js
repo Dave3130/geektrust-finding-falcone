@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import planetImg from '../Images/planet.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Col, Card } from 'react-bootstrap';
@@ -39,5 +40,8 @@ class SelectedPlanets extends React.Component {
         );
     }
 }
+SelectedPlanets.propTypes = {
+    data: PropTypes.object
+};
 
 export default SelectedPlanets;

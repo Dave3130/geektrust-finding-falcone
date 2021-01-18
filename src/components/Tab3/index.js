@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import VehicleCard from './VehicleCard.js';
@@ -51,5 +52,8 @@ class Tab3 extends React.Component {
         );
     };
 }
+Tab3.propTypes = {
+    vehicles: PropTypes.array,
+};
 
 export default Tab3;

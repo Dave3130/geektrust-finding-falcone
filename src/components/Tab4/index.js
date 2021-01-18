@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import vehicleImg from '../Images/vehicle.js';
@@ -78,4 +79,12 @@ class Tab4 extends React.Component {
     };
 }
 
+Tab4.propTypes = {
+    vehicles: PropTypes.array,
+    selectedPlanets: PropTypes.array,
+    selectedVehicles: PropTypes.array,
+    timeTaken: PropTypes.number,
+    onClick: PropTypes.func,
+    find: PropTypes.func
+};
 export default Tab4;

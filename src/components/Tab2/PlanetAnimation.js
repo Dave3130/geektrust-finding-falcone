@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image } from 'react-bootstrap';
 import './style.css';
 import Planet1 from '../assests/planet1.svg';
@@ -26,5 +27,10 @@ class planetAnimation extends React.Component {
         );
     }
 }
+
+planetAnimation.propTypes = {
+    click: PropTypes.func
+};
+
 
 export default planetAnimation;

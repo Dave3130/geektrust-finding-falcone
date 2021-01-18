@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, Image, Spinner } from 'react-bootstrap';
 import error from '../assests/noData.svg';
@@ -19,11 +20,6 @@ class Tab5 extends React.Component {
     handleClick() {
         this.props.clear();
     }
-    handleDelay = () => {
-        setTimeout(function () {
-            this.setState({ delay: !this.state.delay })
-        }, 1000);
-    }
 
     render() {
         return (
@@ -35,7 +31,7 @@ class Tab5 extends React.Component {
                         <Col xs={12} sm={12} md={12} lg={12} className="col">
                             <Card className="text-center mt-5 mb-5" style={{ borderRadius: "1.6rem", width: "90%" }}>
                                 <Card.Body>
-                                    {this.props.selectedPlanets && Object.keys(this.props.selectedPlanets).length === 4 && this.props.selectedVehicle && Object.keys(this.props.selectedVehicles).length === 4 ?
+                                    {this.props.selectedPlanets && Object.keys(this.props.selectedPlanets).length === 4 && Object.keys(this.props.selectedVehicles).length === 4 ?
                                         <>
                                             <Card.Title style={{ fontSize: "1.8rem" }}>Result</Card.Title>
                                             {
@@ -81,5 +77,11 @@ class Tab5 extends React.Component {
         );
     };
 }
+
+Tab5.propTypes = {
+    selectedPlanets: PropTypes.array,
+    selectedVehicles: PropTypes.array,
+};
+
 
 export default Tab5;

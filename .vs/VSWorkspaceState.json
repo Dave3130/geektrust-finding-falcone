@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\App",
+    "\\src\\components\\assests",
+    "\\src\\components\\Footer",
     "\\src\\components\\Homepage",
-    "\\src\\components\\RoundButton",
-    "\\src\\components\\Tab5",
-    "\\src\\components\\TopButtons",
-    "\\src\\__test__"
+    "\\src\\components\\Images",
+    "\\src\\components\\Tab1",
+    "\\src\\components\\Tab4",
+    "\\src\\components\\Tab5"
   ],
-  "SelectedNode": "\\src\\__test__\\RoundButton.test.js",
+  "SelectedNode": "\\src\\components\\Tab4\\index.js",
   "PreviewInSolutionExplorer": false
 }

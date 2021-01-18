@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { Container, Row } from 'react-bootstrap';
 import Footer from '../Footer';
@@ -58,5 +59,12 @@ class Tab2 extends React.Component {
         );
     };
 }
+
+Tab2.propTypes = {
+    planets: PropTypes.array,
+    selectedPlanets: PropTypes.array,
+    onClick: PropTypes.func,
+    onClose: PropTypes.func
+};
 
 export default Tab2;
